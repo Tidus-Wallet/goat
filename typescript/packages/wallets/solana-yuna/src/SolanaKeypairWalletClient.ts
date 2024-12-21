@@ -11,8 +11,8 @@ export class SolanaKeypairWalletClient extends SolanaWalletClient {
     #keypair: Keypair;
 
     constructor(params: SolanaKeypairWalletClientCtorParams) {
-        const { keypair, connection } = params;
-        super({ connection });
+        const { keypair, connection, yunaAPIKey } = params;
+        super({ connection, yunaAPIKey });
         this.#keypair = keypair;
     }
 
