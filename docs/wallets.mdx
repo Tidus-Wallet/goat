@@ -12,8 +12,8 @@ import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 import { http } from "viem";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { viem } from "@goat-sdk/wallet-viem";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 const account = privateKeyToAccount(
     process.env.WALLET_PRIVATE_KEY as `0x${string}`
@@ -31,8 +31,8 @@ const tools = await getOnChainTools({
 ```
 
 ```typescript Crossmint Smart Wallets
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { crossmint } from "@goat-sdk/crossmint";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 
 const apiKey = process.env.CROSSMINT_STAGING_API_KEY;
 const walletSignerSecretKey = process.env.SIGNER_WALLET_SECRET_KEY;
@@ -54,8 +54,8 @@ const tools = await getOnChainTools({
 ```
 
 ```typescript Crossmint Custodial Wallets
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { crossmint } from "@goat-sdk/crossmint";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 import { Connection } from "@solana/web3.js";
 
 const apiKey = process.env.CROSSMINT_STAGING_API_KEY;
@@ -82,8 +82,8 @@ const tools = await getOnChainTools({
 ```
 
 ```typescript Dynamic
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { viem } from "@goat-sdk/wallet-viem";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { viem } from "@nycrypto/goat-wallet-viem";
 import { useDynamicContext, useIsLoggedIn } from "@dynamic-labs/sdk-react-core";
 import { isEthereumWallet } from "@dynamic-labs/ethereum";
 
@@ -107,8 +107,8 @@ const tools = await getOnChainTools({
 
 
 ```typescript Solana
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { solana } from "@goat-sdk/wallet-solana";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { solana } from "@nycrypto/goat-wallet-solana";
 
 import { Connection, Keypair } from "@solana/web3.js";
 import * as bip39 from "bip39";

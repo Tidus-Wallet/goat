@@ -1,5 +1,5 @@
 {
-    "name": "@goat-sdk/plugin-jupiter",
+    "name": "@nycrypto/goat-plugin-jupiter",
     "version": "0.2.4",
     "files": ["dist/**/*", "README.md", "package.json"],
     "scripts": {
@@ -13,14 +13,14 @@
     "types": "./dist/index.d.ts",
     "dependencies": {
         "@jup-ag/api": "6.0.31",
-        "@goat-sdk/core": "workspace:*",
-        "@goat-sdk/wallet-solana": "workspace:*",
+        "@nycrypto/goat-core": "workspace:*",
+        "@nycrypto/goat-wallet-solana": "workspace:*",
         "zod": "catalog:",
         "@solana/web3.js": "catalog:"
     },
     "peerDependencies": {
         "@jup-ag/api": "6.0.31",
-        "@goat-sdk/core": "workspace:*"
+        "@nycrypto/goat-core": "workspace:*"
     },
     "homepage": "https://ohmygoat.dev",
     "repository": {
@@ -29,7 +29,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/goat-sdk/goat/issues"
+        "url": "https://github.com/tiduswallet/goat/issues"
     },
     "keywords": ["ai", "agents", "web3"]
 }

@@ -24,7 +24,7 @@ See all available plugins [here](/chains-wallets-plugins#plugins).
 Plugins extend the `PluginBase` class defined in the [core package](https://github.com/goat-sdk/goat/tree/main/typescript/packages/core/src/classes/PluginBase.ts):
 
 ```typescript
-import { PluginBase } from "@goat-sdk/core";
+import { PluginBase } from "@nycrypto/goat-core";
 
 export class YourPlugin extends PluginBase<EVMWalletClient> {
     constructor(params: YourPluginParams) {
@@ -60,7 +60,7 @@ Building a custom GOAT plugin is straightforward. Below, we'll walk you through 
   Since we are just signing messages, we will create a chain-agnostic plugin that works both on EVM and Solana chains.
 
 ```typescript
-import { PluginBase, WalletClientBase } from "@goat-sdk/core";
+import { PluginBase, WalletClientBase } from "@nycrypto/goat-core";
 
 // Since we are creating a chain-agnostic plugin, we can use the WalletClientBase interface
 export class BAAAASigner extends PluginBase<WalletClientBase> {
@@ -87,7 +87,7 @@ export const baaaSigner = () => new BAAAASigner();
 
     Inside the method, we will return an array of tools created using the `createTool` function.
     ```typescript
-    import { PluginBase, WalletClientBase, createTool } from "@goat-sdk/core";
+    import { PluginBase, WalletClientBase, createTool } from "@nycrypto/goat-core";
 
 // Since we are creating a chain-agnostic plugin, we can use the WalletClientBase interface
 export class BAAAASigner extends PluginBase<WalletClientBase> {
@@ -133,7 +133,7 @@ export const baaaSigner = () => new BAAAASigner();
     The tool methods will receive the wallet client as the first argument and the parameters as the second argument.
 
     ```typescript
-    import { Tool } from "@goat-sdk/core";
+    import { Tool } from "@nycrypto/goat-core";
 
     class MyTools {
         @Tool({
@@ -155,7 +155,7 @@ export const baaaSigner = () => new BAAAASigner();
     Once we have our class we now need to import it in our plugin class.
 
  ```typescript
-    import { PluginBase, WalletClientBase } from "@goat-sdk/core";
+    import { PluginBase, WalletClientBase } from "@nycrypto/goat-core";
     import { MyTools } from "./my-tools.service.ts";
 
 export class BAAAASigner extends PluginBase<WalletClientBase> {

@@ -1,4 +1,4 @@
-import type { EvmChain } from "@goat-sdk/core";
+import type { EvmChain } from "@nycrypto/goat-core";
 
 type ContractConfig = {
     exchange: string;

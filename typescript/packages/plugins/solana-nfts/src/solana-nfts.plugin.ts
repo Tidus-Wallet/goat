@@ -1,4 +1,4 @@
-import { type Chain, PluginBase } from "@goat-sdk/core";
+import { type Chain, PluginBase } from "@nycrypto/goat-core";
 import { SolanaNftsService } from "./solana-nfts.service";
 
 export class SolanaNftsPlugin extends PluginBase {

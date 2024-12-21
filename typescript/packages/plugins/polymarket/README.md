@@ -10,7 +10,7 @@ npm install @goat-sdk/plugin-polymarket
 ## Usage
 
 ```typescript
-import { polymarket } from "@goat-sdk/plugin-polymarket";
+import { polymarket } from "@nycrypto/goat-plugin-polymarket";
 
 
 const plugin = polymarket({

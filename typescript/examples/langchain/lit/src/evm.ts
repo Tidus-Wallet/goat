@@ -7,9 +7,9 @@ import { http } from "viem";
 import { createWalletClient } from "viem";
 import { sepolia } from "viem/chains";
 
-import { getOnChainTools } from "@goat-sdk/adapter-langchain";
-import { PEPE, USDC, erc20 } from "@goat-sdk/plugin-erc20";
-import { sendETH } from "@goat-sdk/wallet-evm";
+import { getOnChainTools } from "@nycrypto/goat-adapter-langchain";
+import { PEPE, USDC, erc20 } from "@nycrypto/goat-plugin-erc20";
+import { sendETH } from "@nycrypto/goat-wallet-evm";
 
 import {
     createEthersWallet,
@@ -21,7 +21,7 @@ import {
     lit,
     mintCapacityCredit,
     mintPKP,
-} from "@goat-sdk/wallet-lit";
+} from "@nycrypto/goat-wallet-lit";
 import { LIT_NETWORK as _LIT_NETWORK } from "@lit-protocol/constants";
 
 import { ethers } from "ethers";

@@ -18,8 +18,8 @@ npm install @goat-sdk/wallet-crossmint
 
 ### Smart Wallet
 ```typescript
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { crossmint } from "@goat-sdk/crossmint";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 
 const apiKey = process.env.CROSSMINT_STAGING_API_KEY;
 const walletSignerSecretKey = process.env.SIGNER_WALLET_SECRET_KEY;
@@ -42,8 +42,8 @@ const tools = await getOnChainTools({
 
 ### Custodial Wallet
 ```typescript
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { crossmint } from "@goat-sdk/crossmint";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 import { Connection } from "@solana/web3.js";
 
 const apiKey = process.env.CROSSMINT_STAGING_API_KEY;
@@ -75,9 +75,9 @@ import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 import { http } from "viem";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { viem } from "@goat-sdk/wallet-viem";
-import { crossmint } from "@goat-sdk/crossmint";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { viem } from "@nycrypto/goat-wallet-viem";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 
 const account = privateKeyToAccount(
     process.env.WALLET_PRIVATE_KEY as `0x${string}`

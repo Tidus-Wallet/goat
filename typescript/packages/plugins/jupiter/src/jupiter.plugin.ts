@@ -1,4 +1,4 @@
-import { type Chain, PluginBase } from "@goat-sdk/core";
+import { type Chain, PluginBase } from "@nycrypto/goat-core";
 import { JupiterService } from "./jupiter.service";
 
 export class JupiterPlugin extends PluginBase {

@@ -1,4 +1,4 @@
-import { Tool } from "@goat-sdk/core";
+import { Tool } from "@nycrypto/goat-core";
 import { CheckApprovalBodySchema, GetQuoteBodySchema, GetSwapBodySchema } from "./parameters";
 import type { UniswapCtorParams } from "./types/UniswapCtorParams";
 

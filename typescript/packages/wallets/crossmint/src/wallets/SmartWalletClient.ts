@@ -1,5 +1,5 @@
 import { CrossmintApiClient } from "@crossmint/common-sdk-base";
-import { EVMReadRequest, EVMSmartWalletClient, EVMTransaction, EVMTypedData } from "@goat-sdk/wallet-evm";
+import { EVMReadRequest, EVMSmartWalletClient, EVMTransaction, EVMTypedData } from "@nycrypto/goat-wallet-evm";
 import { http, Abi, type PublicClient, createPublicClient, encodeFunctionData, formatUnits } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { mainnet } from "viem/chains";

@@ -1,5 +1,5 @@
 import { CrossmintApiClient } from "@crossmint/common-sdk-base";
-import { type SolanaTransaction, SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { type SolanaTransaction, SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { type Connection, PublicKey, TransactionMessage, VersionedTransaction } from "@solana/web3.js";
 import bs58 from "bs58";
 import { formatUnits } from "viem";

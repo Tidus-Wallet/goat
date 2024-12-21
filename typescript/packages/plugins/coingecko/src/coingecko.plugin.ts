@@ -1,4 +1,4 @@
-import { PluginBase } from "@goat-sdk/core";
+import { PluginBase } from "@nycrypto/goat-core";
 import { CoinGeckoService } from "./coingecko.service";
 
 interface CoingeckoPluginOptions {

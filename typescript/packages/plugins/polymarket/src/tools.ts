@@ -8,8 +8,8 @@ import {
     getOpenOrdersParametersSchema,
 } from "./parameters";
 
-import { type ToolBase, createTool } from "@goat-sdk/core";
-import type { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { type ToolBase, createTool } from "@nycrypto/goat-core";
+import type { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { cancelAllOrders, cancelOrder, createOrder, getEvents, getMarketInfo, getOpenOrders } from "./api";
 
 export type PolymarketToolsOptions = {

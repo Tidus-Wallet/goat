@@ -1,5 +1,5 @@
-import { Tool } from "@goat-sdk/core";
-import { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { Tool } from "@nycrypto/goat-core";
+import { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { ERC20_ABI } from "./abi";
 import {
     ApproveParameters,

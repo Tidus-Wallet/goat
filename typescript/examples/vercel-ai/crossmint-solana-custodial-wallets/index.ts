@@ -1,8 +1,8 @@
 import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { crossmint } from "@goat-sdk/crossmint";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 import { Connection } from "@solana/web3.js";
 
 require("dotenv").config();

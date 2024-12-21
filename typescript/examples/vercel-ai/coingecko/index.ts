@@ -6,10 +6,10 @@ import { createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
 
-import { coingecko } from "@goat-sdk/plugin-coingecko";
-import { viem } from "@goat-sdk/wallet-viem";
+import { coingecko } from "@nycrypto/goat-plugin-coingecko";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 require("dotenv").config();
 

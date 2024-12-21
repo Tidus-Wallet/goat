@@ -1,4 +1,4 @@
-import { type Chain, PluginBase } from "@goat-sdk/core";
+import { type Chain, PluginBase } from "@nycrypto/goat-core";
 import { arbitrum, avalanche, base, celo, mainnet, optimism, polygon, zora } from "viem/chains";
 import type { UniswapCtorParams } from "./types/UniswapCtorParams";
 

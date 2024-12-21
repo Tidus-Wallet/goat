@@ -11,11 +11,11 @@
     "license": "MIT",
     "dependencies": {
         "@ai-sdk/openai": "^1.0.4",
-        "@goat-sdk/adapter-vercel-ai": "workspace:*",
-        "@goat-sdk/core": "workspace:*",
-        "@goat-sdk/plugin-erc20": "workspace:*",
-        "@goat-sdk/crossmint": "workspace:*",
-        "@goat-sdk/wallet-evm": "workspace:*",
+        "@nycrypto/goat-adapter-vercel-ai": "workspace:*",
+        "@nycrypto/goat-core": "workspace:*",
+        "@nycrypto/goat-plugin-erc20": "workspace:*",
+        "@nycrypto/goat-wallet-crossmint": "workspace:*",
+        "@nycrypto/goat-wallet-evm": "workspace:*",
         "ai": "catalog:",
         "dotenv": "^16.4.5",
         "viem": "2.21.49"

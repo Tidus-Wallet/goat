@@ -1,5 +1,5 @@
-import { Tool } from "@goat-sdk/core";
-import { SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { Tool } from "@nycrypto/goat-core";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { VersionedTransaction } from "@solana/web3.js";
 import type { z } from "zod";
 import {

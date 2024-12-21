@@ -1,4 +1,4 @@
-import { Tool } from "@goat-sdk/core";
+import { Tool } from "@nycrypto/goat-core";
 import { GetCoinPriceParameters, GetTrendingCoinsParameters } from "./parameters";
 
 export class CoinGeckoService {

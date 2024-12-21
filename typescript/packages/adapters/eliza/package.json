@@ -1,5 +1,5 @@
 {
-    "name": "@goat-sdk/adapter-eliza",
+    "name": "@nycrypto/goat-adapter-eliza",
     "version": "0.2.0",
     "sideEffects": false,
     "files": ["dist/**/*", "README.md", "package.json"],
@@ -13,12 +13,12 @@
     "types": "./dist/index.d.ts",
     "dependencies": {
         "@ai16z/eliza": "0.1.5-alpha.5",
-        "@goat-sdk/core": "workspace:*",
+        "@nycrypto/goat-core": "workspace:*",
         "zod": "catalog:"
     },
     "peerDependencies": {
         "@ai16z/eliza": "0.1.5-alpha.5",
-        "@goat-sdk/core": "workspace:*"
+        "@nycrypto/goat-core": "workspace:*"
     },
     "homepage": "https://ohmygoat.dev",
     "repository": {
@@ -27,7 +27,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/goat-sdk/goat/issues"
+        "url": "https://github.com/tiduswallet/goat/issues"
     },
     "keywords": ["ai", "agents", "web3"]
 }

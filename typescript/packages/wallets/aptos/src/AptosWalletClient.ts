@@ -1,5 +1,5 @@
 import type { Account, Aptos } from "@aptos-labs/ts-sdk";
-import { WalletClientBase } from "@goat-sdk/core";
+import { WalletClientBase } from "@nycrypto/goat-core";
 import { formatUnits } from "viem";
 import type { AptosReadRequest } from "./types/AptosReadRequest";
 import type { AptosTransaction } from "./types/AptosTransaction";

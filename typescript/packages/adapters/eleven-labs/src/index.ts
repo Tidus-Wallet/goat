@@ -4,7 +4,7 @@ import {
     type WalletClientBase,
     addParametersToDescription,
     getTools,
-} from "@goat-sdk/core";
+} from "@nycrypto/goat-core";
 
 import type { z } from "zod";
 

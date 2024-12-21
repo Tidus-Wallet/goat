@@ -3,7 +3,7 @@ import type { SessionSigsMap } from "@lit-protocol/types";
 import { StoredKeyData, api } from "@lit-protocol/wrapped-keys";
 import { PublicKey, Transaction } from "@solana/web3.js";
 
-import { type SolanaTransaction, SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { type SolanaTransaction, SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { formatUnits } from "viem";
 import type { LitSolanaWalletOptions } from "./types";
 

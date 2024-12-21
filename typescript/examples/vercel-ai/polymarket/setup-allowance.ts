@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-import { viem } from "@goat-sdk/wallet-viem";
+import { viem } from "@nycrypto/goat-wallet-viem";
 import { createWalletClient } from "viem";
 import { http } from "viem";
 import { parseAbi } from "viem";

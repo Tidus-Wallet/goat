@@ -1,13 +1,13 @@
 import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { sendSOL, solana } from "@goat-sdk/wallet-solana";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { sendSOL, solana } from "@nycrypto/goat-wallet-solana";
 
 import { Connection, Keypair } from "@solana/web3.js";
 
-import { jupiter } from "@goat-sdk/plugin-jupiter";
-import { splToken } from "@goat-sdk/plugin-spl-token";
+import { jupiter } from "@nycrypto/goat-plugin-jupiter";
+import { splToken } from "@nycrypto/goat-plugin-spl-token";
 import base58 from "bs58";
 
 require("dotenv").config();
@@ -28,7 +28,7 @@ const keypair = Keypair.fromSecretKey(base58.decode(process.env.SOLANA_PRIVATE_K
         model: openai("gpt-4o-mini"),
         tools: tools,
         maxSteps: 10,
-        prompt: "Swap 0.05 USDC to SOL, return the transaction hash, make sure you check i have enough USDC to cover the swap",
+        prompt: "What's my wallet address",
     });
 
     console.log(result.text);

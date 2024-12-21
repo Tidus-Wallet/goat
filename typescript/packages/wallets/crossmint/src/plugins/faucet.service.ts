@@ -1,6 +1,6 @@
 import { CrossmintApiClient } from "@crossmint/common-sdk-base";
-import { Tool, createToolParameters } from "@goat-sdk/core";
-import { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { Tool, createToolParameters } from "@nycrypto/goat-core";
+import { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { z } from "zod";
 import { getTestnetChainNameById } from "../chains";
 

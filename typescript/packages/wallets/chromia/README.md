@@ -45,11 +45,11 @@ EVM_PRIVATE_KEY=0xabc
 ```typescript
 import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
 import { createClient } from "postchain-client";
-import { CHROMIA_MAINNET_BRID, chromia } from "@goat-sdk/wallet-chromia";
+import { CHROMIA_MAINNET_BRID, chromia } from "@nycrypto/goat-wallet-chromia";
 import { createConnection, createInMemoryEvmKeyStore, createKeyStoreInteractor } from "@chromia/ft4";
-import { sendCHR } from "@goat-sdk/wallet-chromia";
+import { sendCHR } from "@nycrypto/goat-wallet-chromia";
 
 const privateKey = process.env.EVM_PRIVATE_KEY
 

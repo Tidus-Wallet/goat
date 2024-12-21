@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { createToolParameters } from "@goat-sdk/core";
+import { createToolParameters } from "@nycrypto/goat-core";
 
 export class CollectionParameters extends createToolParameters(
     z.object({

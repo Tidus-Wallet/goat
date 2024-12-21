@@ -1,5 +1,5 @@
 import type { ISolana } from "@dynamic-labs/solana-core";
-import { SolanWalletClientCtorParams, SolanaTransaction, SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { SolanWalletClientCtorParams, SolanaTransaction, SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { type Connection, PublicKey, TransactionMessage, VersionedTransaction } from "@solana/web3.js";
 import { formatUnits } from "viem";
 

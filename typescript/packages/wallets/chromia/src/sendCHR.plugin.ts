@@ -1,5 +1,5 @@
-import { Chain, PluginBase } from "@goat-sdk/core";
-import { createTool } from "@goat-sdk/core";
+import { Chain, PluginBase } from "@nycrypto/goat-core";
+import { createTool } from "@nycrypto/goat-core";
 import { z } from "zod";
 import { ChromiaWalletClient } from "./ChromiaWalletClient";
 import { CHROMIA_MAINNET_BRID } from "./consts";

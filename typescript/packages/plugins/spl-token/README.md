@@ -10,7 +10,7 @@ npm install @goat-sdk/plugin-spl-token
 ## Usage
 
 ```typescript
-import { splToken, USDC, GOAT } from "@goat-sdk/plugin-spl-token";
+import { splToken, USDC, GOAT } from "@nycrypto/goat-plugin-spl-token";
 
 const plugin = splToken({
     connection,
@@ -21,7 +21,7 @@ const plugin = splToken({
 
 ### Adding custom tokens
 ```typescript
-import { splToken } from "@goat-sdk/plugin-spl-token";
+import { splToken } from "@nycrypto/goat-plugin-spl-token";
 
 
 const plugin = splToken({

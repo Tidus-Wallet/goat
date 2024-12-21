@@ -10,7 +10,7 @@ npm install @goat-sdk/plugin-erc20
 ## Usage
 
 ```typescript
-import { erc20 } from "@goat-sdk/plugin-erc20";
+import { erc20 } from "@nycrypto/goat-plugin-erc20";
 
 
 const plugin = erc20({
@@ -20,7 +20,7 @@ const plugin = erc20({
 
 ### Adding custom tokens
 ```typescript
-import { erc20 } from "@goat-sdk/plugin-erc20";
+import { erc20 } from "@nycrypto/goat-plugin-erc20";
 
 
 const plugin = erc20({

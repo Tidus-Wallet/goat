@@ -1,4 +1,4 @@
-import type { EVMReadRequest, EVMReadResult, EVMTransaction, EVMTypedData } from "@goat-sdk/wallet-evm";
+import type { EVMReadRequest, EVMReadResult, EVMTransaction, EVMTypedData } from "@nycrypto/goat-wallet-evm";
 import type { AccsDefaultParams, SessionSigsMap } from "@lit-protocol/types";
 import { type EthereumLitTransaction, StoredKeyData, api } from "@lit-protocol/wrapped-keys";
 import { formatEther, formatUnits, isAddress, publicActions } from "viem";
@@ -7,8 +7,8 @@ import { normalize } from "viem/ens";
 import { signEip712MessageLitActionCode } from "./litActions/evmWrappedKeySignEip712Message";
 import type { LitEVMWalletOptions } from "./types";
 
-import { type EvmChain, type Signature } from "@goat-sdk/core";
-import { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { type EvmChain, type Signature } from "@nycrypto/goat-core";
+import { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { LitNodeClient } from "@lit-protocol/lit-node-client";
 
 import { WalletClient as ViemWalletClient } from "viem";

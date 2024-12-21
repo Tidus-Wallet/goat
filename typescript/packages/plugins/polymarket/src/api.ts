@@ -1,5 +1,5 @@
-import type { Chain, EvmChain } from "@goat-sdk/core";
-import type { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import type { Chain, EvmChain } from "@nycrypto/goat-core";
+import type { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { parseUnits } from "viem";
 import { polygon } from "viem/chains";
 import type { z } from "zod";

@@ -15,7 +15,7 @@ import {
     type WalletClientBase,
     addParametersToDescription,
     getTools,
-} from "@goat-sdk/core";
+} from "@nycrypto/goat-core";
 
 type GetOnChainActionsParams<TWalletClient extends WalletClientBase> = {
     wallet: TWalletClient;

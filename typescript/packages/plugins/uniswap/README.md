@@ -10,7 +10,7 @@ npm install @goat-sdk/plugin-uniswap
 ## Usage
 
 ```typescript
-import { uniswap } from "@goat-sdk/plugin-uniswap";
+import { uniswap } from "@nycrypto/goat-plugin-uniswap";
 
 
 const plugin = uniswap({

@@ -1,5 +1,5 @@
-import { type Chain, PluginBase, type ToolBase } from "@goat-sdk/core";
-import type { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { type Chain, PluginBase, type ToolBase } from "@nycrypto/goat-core";
+import type { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { polygon } from "viem/chains";
 import { type ApiKeyCredentials, createOrDeriveAPIKey, createOrder } from "./api";
 import { getTools } from "./tools";

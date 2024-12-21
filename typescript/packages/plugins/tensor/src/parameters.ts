@@ -1,4 +1,4 @@
-import { createToolParameters } from "@goat-sdk/core";
+import { createToolParameters } from "@nycrypto/goat-core";
 import { z } from "zod";
 
 export class GetNftInfoParameters extends createToolParameters(

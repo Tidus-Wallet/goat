@@ -1,5 +1,5 @@
-import { Tool } from "@goat-sdk/core";
-import { SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { Tool } from "@nycrypto/goat-core";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { transfer } from "@metaplex-foundation/mpl-bubblegum";
 import { getAssetWithProof } from "@metaplex-foundation/mpl-bubblegum";
 import { mplBubblegum } from "@metaplex-foundation/mpl-bubblegum";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useConversation } from "@11labs/react";
-import { getOnChainTools } from "@goat-sdk/adapter-eleven-labs";
+import { getOnChainTools } from "@nycrypto/goat-adapter-eleven-labs";
 import { useCallback } from "react";
 
 import { isEthereumWallet } from "@dynamic-labs/ethereum";
@@ -9,9 +9,9 @@ import { DynamicWidget, useIsLoggedIn } from "@dynamic-labs/sdk-react-core";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 import { isSolanaWallet } from "@dynamic-labs/solana";
 
-import { coingecko } from "@goat-sdk/plugin-coingecko";
-import { sendETH } from "@goat-sdk/wallet-evm";
-import { viem } from "@goat-sdk/wallet-viem";
+import { coingecko } from "@nycrypto/goat-plugin-coingecko";
+import { sendETH } from "@nycrypto/goat-wallet-evm";
+import { viem } from "@nycrypto/goat-wallet-viem";
 import { createSolanaWalletFromDynamic } from "../utils";
 
 export function Conversation() {

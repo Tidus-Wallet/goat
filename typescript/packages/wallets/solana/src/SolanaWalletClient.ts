@@ -1,4 +1,4 @@
-import { WalletClientBase } from "@goat-sdk/core";
+import { WalletClientBase } from "@nycrypto/goat-core";
 import { AddressLookupTableAccount, type Connection, PublicKey } from "@solana/web3.js";
 import { formatUnits } from "viem";
 import type { SolanaTransaction } from "./types";

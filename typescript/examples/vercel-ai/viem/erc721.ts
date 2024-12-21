@@ -5,11 +5,11 @@ import { http, createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { Token, erc721 } from "@goat-sdk/plugin-erc721";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { Token, erc721 } from "@nycrypto/goat-plugin-erc721";
 
-import { sendETH } from "@goat-sdk/wallet-evm";
-import { viem } from "@goat-sdk/wallet-viem";
+import { sendETH } from "@nycrypto/goat-wallet-evm";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 require("dotenv").config();
 

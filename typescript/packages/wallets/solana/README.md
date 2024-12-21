@@ -7,8 +7,8 @@ npm install @goat-sdk/wallet-solana
 
 ## Usage
 ```typescript
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { solana } from "@goat-sdk/wallet-solana";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { solana } from "@nycrypto/goat-wallet-solana";
 
 import { Connection, Keypair } from "@solana/web3.js";
 import * as bip39 from "bip39";

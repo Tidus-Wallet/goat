@@ -14,7 +14,7 @@ import {
     sendAndConfirmTransaction,
 } from "@solana/web3.js";
 
-import { getOnChainTools } from "@goat-sdk/adapter-langchain";
+import { getOnChainTools } from "@nycrypto/goat-adapter-langchain";
 import {
     createEthersWallet,
     createLitContractsClient,
@@ -25,8 +25,8 @@ import {
     lit,
     mintCapacityCredit,
     mintPKP,
-} from "@goat-sdk/wallet-lit";
-import { sendSOL } from "@goat-sdk/wallet-solana";
+} from "@nycrypto/goat-wallet-lit";
+import { sendSOL } from "@nycrypto/goat-wallet-solana";
 
 import { LIT_NETWORK as _LIT_NETWORK } from "@lit-protocol/constants";
 

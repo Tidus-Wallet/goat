@@ -6,9 +6,9 @@ import { createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { polygon } from "viem/chains";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { uniswap } from "@goat-sdk/plugin-uniswap";
-import { viem } from "@goat-sdk/wallet-viem";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { uniswap } from "@nycrypto/goat-plugin-uniswap";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 require("dotenv").config();
 

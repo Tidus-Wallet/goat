@@ -75,7 +75,7 @@ An example of how to use the Lit Solana wallet client can be found [here](../../
 ### Lit EVM Wallet Client
 
 ```typescript
-import { 
+import {
     createLitNodeClient,
     createEthersWallet,
     createLitContractsClient,
@@ -83,8 +83,8 @@ import {
     mintPKP,
     getPKPSessionSigs,
     generateWrappedKey,
-    lit 
-} from "@goat-sdk/wallet-lit";
+    lit
+} from "@nycrypto/goat-wallet-lit";
 import { LIT_NETWORK } from "@lit-protocol/constants";
 import { clusterApiUrl, Connection } from "@solana/web3.js";
 
@@ -95,7 +95,7 @@ const litContractsClient = await createLitContractsClient(ethersWallet, LIT_NETW
 
 // Mint capacity credit and PKP
 const capacityCredit = await mintCapacityCredit(
-    litContractsClient, 
+    litContractsClient,
     10, // requests per second
     30 // days until expiration
 );
@@ -135,7 +135,7 @@ const litWallet = lit({
 ### Lit Solana Wallet Client
 
 ```typescript
-import { 
+import {
     createLitNodeClient,
     createEthersWallet,
     createLitContractsClient,
@@ -143,8 +143,8 @@ import {
     mintPKP,
     getPKPSessionSigs,
     generateWrappedKey,
-    lit 
-} from "@goat-sdk/wallet-lit";
+    lit
+} from "@nycrypto/goat-wallet-lit";
 import { LIT_NETWORK } from "@lit-protocol/constants";
 import { createWalletClient, http } from "viem";
 import { sepolia } from "viem/chains";
@@ -156,7 +156,7 @@ const litContractsClient = await createLitContractsClient(ethersWallet, LIT_NETW
 
 // Mint capacity credit and PKP
 const capacityCredit = await mintCapacityCredit(
-    litContractsClient, 
+    litContractsClient,
     10, // requests per second
     30 // days until expiration
 );

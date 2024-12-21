@@ -1,4 +1,4 @@
-import type { Chain as GoatChain } from "@goat-sdk/core";
+import type { Chain as GoatChain } from "@nycrypto/goat-core";
 import {
     type Chain,
     arbitrum,

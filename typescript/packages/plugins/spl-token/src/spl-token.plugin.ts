@@ -1,4 +1,4 @@
-import { type Chain, PluginBase } from "@goat-sdk/core";
+import { type Chain, PluginBase } from "@nycrypto/goat-core";
 import { SplTokenService } from "./spl-token.service";
 import type { SplTokenPluginCtorParams } from "./types/SplTokenPluginCtorParams";
 

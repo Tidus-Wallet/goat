@@ -1,5 +1,5 @@
 {
-    "name": "@goat-sdk/core",
+    "name": "@nycrypto/goat-core",
     "version": "0.4.0",
     "sideEffects": false,
     "files": ["dist/**/*", "README.md", "package.json"],
@@ -22,7 +22,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/goat-sdk/goat/issues"
+        "url": "https://github.com/tiduswallet/goat/issues"
     },
     "keywords": ["ai", "agents", "web3"]
 }

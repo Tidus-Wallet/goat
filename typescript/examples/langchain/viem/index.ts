@@ -8,11 +8,11 @@ import { createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 
-import { getOnChainTools } from "@goat-sdk/adapter-langchain";
-import { PEPE, USDC, erc20 } from "@goat-sdk/plugin-erc20";
+import { getOnChainTools } from "@nycrypto/goat-adapter-langchain";
+import { PEPE, USDC, erc20 } from "@nycrypto/goat-plugin-erc20";
 
-import { sendETH } from "@goat-sdk/wallet-evm";
-import { viem } from "@goat-sdk/wallet-viem";
+import { sendETH } from "@nycrypto/goat-wallet-evm";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 require("dotenv").config();
 

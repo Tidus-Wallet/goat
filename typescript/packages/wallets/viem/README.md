@@ -12,8 +12,8 @@ import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 import { http } from "viem";
 
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { viem } from "@goat-sdk/wallet-viem";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 const account = privateKeyToAccount(
     process.env.WALLET_PRIVATE_KEY as `0x${string}`

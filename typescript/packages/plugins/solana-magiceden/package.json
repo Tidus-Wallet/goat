@@ -1,5 +1,5 @@
 {
-    "name": "@goat-sdk/plugin-solana-magiceden",
+    "name": "@nycrypto/goat-plugin-solana-magiceden",
     "version": "0.2.4",
     "files": ["dist/**/*", "README.md", "package.json"],
     "scripts": {
@@ -12,13 +12,13 @@
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "dependencies": {
-        "@goat-sdk/core": "workspace:*",
-        "@goat-sdk/wallet-solana": "workspace:*",
+        "@nycrypto/goat-core": "workspace:*",
+        "@nycrypto/goat-wallet-solana": "workspace:*",
         "@solana/web3.js": "catalog:",
         "zod": "catalog:"
     },
     "peerDependencies": {
-        "@goat-sdk/core": "workspace:*"
+        "@nycrypto/goat-core": "workspace:*"
     },
     "homepage": "https://ohmygoat.dev",
     "repository": {
@@ -27,7 +27,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/goat-sdk/goat/issues"
+        "url": "https://github.com/tiduswallet/goat/issues"
     },
     "keywords": ["ai", "agents", "web3"]
 }

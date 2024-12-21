@@ -1,5 +1,5 @@
-import { type Chain, PluginBase } from "@goat-sdk/core";
-import type { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { type Chain, PluginBase } from "@nycrypto/goat-core";
+import type { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import { mode } from "viem/chains";
 import { KimService } from "./kim.service";
 

@@ -10,7 +10,7 @@ npm install @goat-sdk/plugin-coingecko
 ## Setup
     
 ```typescript
-import { coingecko } from "@goat-sdk/plugin-coingecko";
+import { coingecko } from "@nycrypto/goat-plugin-coingecko";
 
 const plugin = coingecko({ 
     apiKey: process.env.COINGECKO_API_KEY 

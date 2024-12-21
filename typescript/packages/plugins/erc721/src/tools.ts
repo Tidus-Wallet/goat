@@ -7,8 +7,8 @@ import {
     transferParametersSchema,
 } from "./parameters";
 
-import { type ToolBase, createTool } from "@goat-sdk/core";
-import type { EVMWalletClient } from "@goat-sdk/wallet-evm";
+import { type ToolBase, createTool } from "@nycrypto/goat-core";
+import type { EVMWalletClient } from "@nycrypto/goat-wallet-evm";
 import type { z } from "zod";
 import type { ChainSpecificToken } from "./token";
 

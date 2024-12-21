@@ -1,4 +1,4 @@
-import { type GetToolsParams, type ToolBase, type WalletClientBase, getTools } from "@goat-sdk/core";
+import { type GetToolsParams, type ToolBase, type WalletClientBase, getTools } from "@nycrypto/goat-core";
 
 import { tool } from "@langchain/core/tools";
 import type { z } from "zod";

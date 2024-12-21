@@ -1,4 +1,4 @@
-import { Chain, PluginBase, createTool } from "@goat-sdk/core";
+import { Chain, PluginBase, createTool } from "@nycrypto/goat-core";
 import { parseEther } from "viem";
 import * as allEVMChains from "viem/chains";
 import { z } from "zod";

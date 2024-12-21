@@ -1,5 +1,5 @@
-import { Tool } from "@goat-sdk/core";
-import { SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { Tool } from "@nycrypto/goat-core";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { createJupiterApiClient } from "@jup-ag/api";
 import { ComputeBudgetProgram, PublicKey, Transaction, TransactionInstruction } from "@solana/web3.js";
 

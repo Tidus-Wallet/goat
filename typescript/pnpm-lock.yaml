@@ -116,22 +116,22 @@ importers:
       '@dynamic-labs/wagmi-connector':
         specifier: 4.0.0-alpha.45
         version: 4.0.0-alpha.45(5ibcb7wndwla35l3zaitqxjmnq)
-      '@goat-sdk/adapter-eleven-labs':
+      '@nycrypto/goat-adapter-eleven-labs':
         specifier: workspace:*
         version: link:../../../packages/adapters/eleven-labs
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-coingecko':
+      '@nycrypto/goat-plugin-coingecko':
         specifier: workspace:*
         version: link:../../../packages/plugins/coingecko
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../../packages/wallets/evm
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../../../packages/wallets/solana
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       '@tanstack/react-query':
@@ -168,33 +168,33 @@ importers:
 
   examples/langchain/lit:
     dependencies:
-      '@goat-sdk/adapter-langchain':
-        specifier: workspace:*
-        version: link:../../../packages/adapters/langchain
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../../packages/core
-      '@goat-sdk/plugin-erc20':
-        specifier: workspace:*
-        version: link:../../../packages/plugins/erc20
-      '@goat-sdk/wallet-evm':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/evm
-      '@goat-sdk/wallet-lit':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/lit-protocol
-      '@goat-sdk/wallet-solana':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/solana
       '@langchain/core':
         specifier: 'catalog:'
-        version: 0.3.6(openai@4.73.0(zod@3.23.8))
+        version: 0.3.6(openai@4.73.0(zod@3.24.1))
       '@langchain/openai':
         specifier: ^0.3.5
-        version: 0.3.14(@langchain/core@0.3.6(openai@4.73.0(zod@3.23.8)))
+        version: 0.3.14(@langchain/core@0.3.6(openai@4.73.0(zod@3.24.1)))
       '@lit-protocol/constants':
         specifier: 'catalog:'
         version: 7.0.2(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)
+      '@nycrypto/goat-adapter-langchain':
+        specifier: workspace:*
+        version: link:../../../packages/adapters/langchain
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../../packages/core
+      '@nycrypto/goat-plugin-erc20':
+        specifier: workspace:*
+        version: link:../../../packages/plugins/erc20
+      '@nycrypto/goat-wallet-evm':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/evm
+      '@nycrypto/goat-wallet-lit':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/lit-protocol
+      '@nycrypto/goat-wallet-solana':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/solana
       '@solana/web3.js':
         specifier: 'catalog:'
         version: 1.95.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -206,62 +206,62 @@ importers:
         version: 5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       langchain:
         specifier: ^0.3.2
-        version: 0.3.6(@langchain/core@0.3.6(openai@4.73.0(zod@3.23.8)))(axios@1.7.4)(openai@4.73.0(zod@3.23.8))
+        version: 0.3.6(@langchain/core@0.3.6(openai@4.73.0(zod@3.24.1)))(axios@1.7.4)(openai@4.73.0(zod@3.24.1))
       viem:
         specifier: 2.21.49
-        version: 2.21.49(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.23.8)
+        version: 2.21.49(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.24.1)
 
   examples/langchain/viem:
     dependencies:
-      '@goat-sdk/adapter-langchain':
-        specifier: workspace:*
-        version: link:../../../packages/adapters/langchain
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../../packages/core
-      '@goat-sdk/plugin-erc20':
-        specifier: workspace:*
-        version: link:../../../packages/plugins/erc20
-      '@goat-sdk/wallet-evm':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/evm
-      '@goat-sdk/wallet-viem':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/viem
       '@langchain/core':
         specifier: 'catalog:'
-        version: 0.3.6(openai@4.73.0(zod@3.24.1))
+        version: 0.3.6(openai@4.73.0(zod@3.23.8))
       '@langchain/openai':
         specifier: ^0.3.5
-        version: 0.3.14(@langchain/core@0.3.6(openai@4.73.0(zod@3.24.1)))
+        version: 0.3.14(@langchain/core@0.3.6(openai@4.73.0(zod@3.23.8)))
+      '@nycrypto/goat-adapter-langchain':
+        specifier: workspace:*
+        version: link:../../../packages/adapters/langchain
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../../packages/core
+      '@nycrypto/goat-plugin-erc20':
+        specifier: workspace:*
+        version: link:../../../packages/plugins/erc20
+      '@nycrypto/goat-wallet-evm':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/evm
+      '@nycrypto/goat-wallet-viem':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/viem
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
       langchain:
         specifier: ^0.3.2
-        version: 0.3.6(@langchain/core@0.3.6(openai@4.73.0(zod@3.24.1)))(axios@1.7.4)(openai@4.73.0(zod@3.24.1))
+        version: 0.3.6(@langchain/core@0.3.6(openai@4.73.0(zod@3.23.8)))(axios@1.7.4)(openai@4.73.0(zod@3.23.8))
       viem:
         specifier: 2.21.49
-        version: 2.21.49(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.24.1)
+        version: 2.21.49(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.23.8)
 
   examples/vercel-ai/abstract:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-erc20':
+      '@nycrypto/goat-plugin-erc20':
         specifier: workspace:*
         version: link:../../../packages/plugins/erc20
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../../packages/wallets/evm
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       ai:
@@ -282,18 +282,18 @@ importers:
       '@chromia/ft4':
         specifier: 'catalog:'
         version: 1.0.1(buffer@6.0.3)(bufferutil@4.0.8)(events@3.3.0)(postchain-client@1.20.1(buffer@6.0.3)(events@3.3.0))(utf-8-validate@5.0.10)
-      '@goat-sdk/adapter-vercel-ai':
-        specifier: workspace:*
-        version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../../packages/core
-      '@goat-sdk/wallet-chromia':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/chromia
       '@langchain/langgraph':
         specifier: ^0.2.0
         version: 0.2.34(@langchain/core@0.3.18(openai@4.73.0(zod@3.24.1)))
+      '@nycrypto/goat-adapter-vercel-ai':
+        specifier: workspace:*
+        version: link:../../../packages/adapters/vercel-ai
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../../packages/core
+      '@nycrypto/goat-wallet-chromia':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/chromia
       ai:
         specifier: 'catalog:'
         version: 4.0.3(react@19.0.0-rc-66855b96-20241106)(zod@3.24.1)
@@ -315,16 +315,16 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-coingecko':
+      '@nycrypto/goat-plugin-coingecko':
         specifier: workspace:*
         version: link:../../../packages/plugins/coingecko
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       ai:
@@ -342,19 +342,19 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/crossmint':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/crossmint
-      '@goat-sdk/plugin-erc20':
+      '@nycrypto/goat-plugin-erc20':
         specifier: workspace:*
         version: link:../../../packages/plugins/erc20
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-crossmint':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/crossmint
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../../packages/wallets/evm
       ai:
@@ -372,19 +372,19 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/crossmint':
-        specifier: workspace:*
-        version: link:../../../packages/wallets/crossmint
-      '@goat-sdk/plugin-solana-nfts':
+      '@nycrypto/goat-plugin-solana-nfts':
         specifier: workspace:*
         version: link:../../../packages/plugins/solana-nfts
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-crossmint':
+        specifier: workspace:*
+        version: link:../../../packages/wallets/crossmint
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../../../packages/wallets/solana
       '@solana/web3.js':
@@ -405,25 +405,25 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-erc20':
+      '@nycrypto/goat-plugin-erc20':
         specifier: workspace:*
         version: link:../../../packages/plugins/erc20
-      '@goat-sdk/plugin-erc721':
+      '@nycrypto/goat-plugin-erc721':
         specifier: workspace:*
         version: link:../../../packages/plugins/erc721
-      '@goat-sdk/plugin-kim':
+      '@nycrypto/goat-plugin-kim':
         specifier: workspace:*
         version: link:../../../packages/plugins/kim
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../../packages/wallets/evm
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       ai:
@@ -441,16 +441,16 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-polymarket':
+      '@nycrypto/goat-plugin-polymarket':
         specifier: workspace:*
         version: link:../../../packages/plugins/polymarket
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       ai:
@@ -468,19 +468,19 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-jupiter':
+      '@nycrypto/goat-plugin-jupiter':
         specifier: workspace:*
         version: link:../../../packages/plugins/jupiter
-      '@goat-sdk/plugin-spl-token':
+      '@nycrypto/goat-plugin-spl-token':
         specifier: workspace:*
         version: link:../../../packages/plugins/spl-token
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../../../packages/wallets/solana
       '@solana/web3.js':
@@ -504,16 +504,16 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-uniswap':
+      '@nycrypto/goat-plugin-uniswap':
         specifier: workspace:*
         version: link:../../../packages/plugins/uniswap
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       ai:
@@ -531,22 +531,22 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.4
         version: 1.0.5(zod@3.24.1)
-      '@goat-sdk/adapter-vercel-ai':
+      '@nycrypto/goat-adapter-vercel-ai':
         specifier: workspace:*
         version: link:../../../packages/adapters/vercel-ai
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../../packages/core
-      '@goat-sdk/plugin-erc20':
+      '@nycrypto/goat-plugin-erc20':
         specifier: workspace:*
         version: link:../../../packages/plugins/erc20
-      '@goat-sdk/plugin-erc721':
+      '@nycrypto/goat-plugin-erc721':
         specifier: workspace:*
         version: link:../../../packages/plugins/erc721
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../../packages/wallets/evm
-      '@goat-sdk/wallet-viem':
+      '@nycrypto/goat-wallet-viem':
         specifier: workspace:*
         version: link:../../../packages/wallets/viem
       ai:
@@ -561,7 +561,7 @@ importers:
 
   packages/adapters/eleven-labs:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       zod:
@@ -573,7 +573,7 @@ importers:
       '@ai16z/eliza':
         specifier: 0.1.5-alpha.5
         version: 0.1.5-alpha.5(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.18(openai@4.73.0(zod@3.23.8)))(axios@1.7.4)(react@19.0.0-rc-66855b96-20241106)(sswr@2.1.0(svelte@5.2.12))(svelte@5.2.12)(vue@3.5.13(typescript@5.6.3))
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       zod:
@@ -582,19 +582,19 @@ importers:
 
   packages/adapters/langchain:
     dependencies:
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../core
       '@langchain/core':
         specifier: 'catalog:'
         version: 0.3.6(openai@4.73.0(zod@3.23.8))
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../core
       zod:
         specifier: 'catalog:'
         version: 3.23.8
 
   packages/adapters/vercel-ai:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       ai:
@@ -615,7 +615,7 @@ importers:
 
   packages/plugins/coingecko:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       zod:
@@ -624,10 +624,10 @@ importers:
 
   packages/plugins/erc20:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../wallets/evm
       viem:
@@ -639,10 +639,10 @@ importers:
 
   packages/plugins/erc721:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../wallets/evm
       viem:
@@ -654,15 +654,15 @@ importers:
 
   packages/plugins/jupiter:
     dependencies:
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../core
-      '@goat-sdk/wallet-solana':
-        specifier: workspace:*
-        version: link:../../wallets/solana
       '@jup-ag/api':
         specifier: 6.0.31
         version: 6.0.31
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../core
+      '@nycrypto/goat-wallet-solana':
+        specifier: workspace:*
+        version: link:../../wallets/solana
       '@solana/web3.js':
         specifier: 'catalog:'
         version: 1.95.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -672,10 +672,10 @@ importers:
 
   packages/plugins/kim:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../wallets/evm
       viem:
@@ -690,15 +690,15 @@ importers:
       '@coral-xyz/anchor':
         specifier: 0.30.1
         version: 0.30.1(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../core
-      '@goat-sdk/wallet-solana':
-        specifier: workspace:*
-        version: link:../../wallets/solana
       '@meteora-ag/dlmm':
         specifier: 1.3.4
         version: 1.3.4(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../core
+      '@nycrypto/goat-wallet-solana':
+        specifier: workspace:*
+        version: link:../../wallets/solana
       '@solana/web3.js':
         specifier: 'catalog:'
         version: 1.95.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -715,10 +715,10 @@ importers:
 
   packages/plugins/polymarket:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../../wallets/evm
       crypto:
@@ -733,10 +733,10 @@ importers:
 
   packages/plugins/solana-magiceden:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../../wallets/solana
       '@solana/web3.js':
@@ -748,12 +748,6 @@ importers:
 
   packages/plugins/solana-nfts:
     dependencies:
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../core
-      '@goat-sdk/wallet-solana':
-        specifier: workspace:*
-        version: link:../../wallets/solana
       '@metaplex-foundation/digital-asset-standard-api':
         specifier: 1.0.0
         version: 1.0.0(@metaplex-foundation/umi@0.9.2)
@@ -769,6 +763,12 @@ importers:
       '@metaplex-foundation/umi-web3js-adapters':
         specifier: 0.8.10
         version: 0.8.10(@metaplex-foundation/umi@0.9.2)(@solana/web3.js@1.95.8(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../core
+      '@nycrypto/goat-wallet-solana':
+        specifier: workspace:*
+        version: link:../../wallets/solana
       '@solana/web3.js':
         specifier: 'catalog:'
         version: 1.95.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -781,10 +781,10 @@ importers:
 
   packages/plugins/spl-token:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../../wallets/solana
       '@solana/spl-token':
@@ -799,10 +799,10 @@ importers:
 
   packages/plugins/tensor:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../../wallets/solana
       '@solana/web3.js':
@@ -814,7 +814,7 @@ importers:
 
   packages/plugins/uniswap:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       viem:
@@ -829,7 +829,7 @@ importers:
       '@aptos-labs/ts-sdk':
         specifier: ^1.33.1
         version: 1.33.1
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       viem:
@@ -844,7 +844,7 @@ importers:
       '@chromia/ft4':
         specifier: 1.0.1
         version: 1.0.1(buffer@6.0.3)(bufferutil@4.0.8)(events@3.3.0)(postchain-client@1.20.1(buffer@6.0.3)(events@3.3.0))(utf-8-validate@5.0.10)
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       postchain-client:
@@ -862,13 +862,13 @@ importers:
       '@crossmint/common-sdk-base':
         specifier: 0.3.1
         version: 0.3.1
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../evm
-      '@goat-sdk/wallet-solana':
+      '@nycrypto/goat-wallet-solana':
         specifier: workspace:*
         version: link:../solana
       '@solana/web3.js':
@@ -889,7 +889,7 @@ importers:
 
   packages/wallets/evm:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       abitype:
@@ -904,15 +904,6 @@ importers:
 
   packages/wallets/lit-protocol:
     dependencies:
-      '@goat-sdk/core':
-        specifier: workspace:*
-        version: link:../../core
-      '@goat-sdk/wallet-evm':
-        specifier: workspace:*
-        version: link:../evm
-      '@goat-sdk/wallet-solana':
-        specifier: workspace:*
-        version: link:../solana
       '@lit-protocol/auth-helpers':
         specifier: 'catalog:'
         version: 7.0.2(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)
@@ -934,6 +925,15 @@ importers:
       '@lit-protocol/wrapped-keys':
         specifier: 'catalog:'
         version: 7.0.2(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)
+      '@nycrypto/goat-core':
+        specifier: workspace:*
+        version: link:../../core
+      '@nycrypto/goat-wallet-evm':
+        specifier: workspace:*
+        version: link:../evm
+      '@nycrypto/goat-wallet-solana':
+        specifier: workspace:*
+        version: link:../solana
       '@solana/web3.js':
         specifier: 'catalog:'
         version: 1.95.8(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -950,7 +950,7 @@ importers:
 
   packages/wallets/solana:
     dependencies:
-      '@goat-sdk/core':
+      '@nycrypto/goat-core':
         specifier: workspace:*
         version: link:../../core
       '@solana/web3.js':
@@ -968,7 +968,7 @@ importers:
 
   packages/wallets/viem:
     dependencies:
-      '@goat-sdk/wallet-evm':
+      '@nycrypto/goat-wallet-evm':
         specifier: workspace:*
         version: link:../evm
       viem:

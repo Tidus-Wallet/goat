@@ -7,8 +7,8 @@ import { http } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { polygon, polygonAmoy } from "viem/chains";
 
-import { createOrder } from "@goat-sdk/plugin-polymarket";
-import { viem } from "@goat-sdk/wallet-viem";
+import { createOrder } from "@nycrypto/goat-plugin-polymarket";
+import { viem } from "@nycrypto/goat-wallet-viem";
 
 const account = privateKeyToAccount(process.env.WALLET_PRIVATE_KEY as `0x${string}`);
 

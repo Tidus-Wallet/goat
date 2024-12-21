@@ -1,5 +1,5 @@
 {
-    "name": "@goat-sdk/adapter-vercel-ai",
+    "name": "@nycrypto/goat-adapter-vercel-ai",
     "version": "0.2.0",
     "sideEffects": false,
     "files": ["dist/**/*", "README.md", "package.json"],
@@ -12,12 +12,12 @@
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "dependencies": {
-        "@goat-sdk/core": "workspace:*",
+        "@nycrypto/goat-core": "workspace:*",
         "ai": "catalog:",
         "zod": "catalog:"
     },
     "peerDependencies": {
-        "@goat-sdk/core": "workspace:*",
+        "@nycrypto/goat-core": "workspace:*",
         "ai": "catalog:"
     },
     "homepage": "https://ohmygoat.dev",
@@ -27,7 +27,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/goat-sdk/goat/issues"
+        "url": "https://github.com/tiduswallet/goat/issues"
     },
     "keywords": ["ai", "agents", "web3"]
 }

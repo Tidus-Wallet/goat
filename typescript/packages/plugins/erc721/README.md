@@ -10,7 +10,7 @@ npm install @goat-sdk/plugin-erc721
 ## Usage
 
 ```typescript
-import { erc721, BAYC } from "@goat-sdk/plugin-erc721";
+import { erc721, BAYC } from "@nycrypto/goat-plugin-erc721";
 
 const plugin = erc721({
     tokens: [BAYC],
@@ -19,7 +19,7 @@ const plugin = erc721({
 
 ### Adding custom tokens
 ```typescript
-import { erc721, BAYC } from "@goat-sdk/plugin-erc721";
+import { erc721, BAYC } from "@nycrypto/goat-plugin-erc721";
 
 const plugin = erc721({
   tokens: [

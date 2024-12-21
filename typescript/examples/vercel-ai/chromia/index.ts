@@ -1,9 +1,9 @@
 import readline from "node:readline";
 import { openai } from "@ai-sdk/openai";
 import { createConnection, createInMemoryEvmKeyStore, createKeyStoreInteractor } from "@chromia/ft4";
-import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
-import { sendCHR } from "@goat-sdk/wallet-chromia";
-import { CHROMIA_MAINNET_BRID, chromia } from "@goat-sdk/wallet-chromia";
+import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
+import { sendCHR } from "@nycrypto/goat-wallet-chromia";
+import { CHROMIA_MAINNET_BRID, chromia } from "@nycrypto/goat-wallet-chromia";
 import { generateText } from "ai";
 import chalk from "chalk";
 import { type KeyPair, createClient } from "postchain-client";

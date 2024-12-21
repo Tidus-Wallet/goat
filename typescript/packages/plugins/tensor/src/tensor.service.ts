@@ -1,5 +1,5 @@
-import { Tool } from "@goat-sdk/core";
-import { SolanaWalletClient } from "@goat-sdk/wallet-solana";
+import { Tool } from "@nycrypto/goat-core";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { z } from "zod";
 import { GetNftInfoParameters, getBuyListingTransactionResponseSchema, getNftInfoResponseSchema } from "./parameters";
 import { deserializeTxResponseToInstructions } from "./utils/deserializeTxResponseToInstructions";
