@@ -2,7 +2,7 @@ import { Tool } from "@nycrypto/goat-core";
 import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import {
     createAssociatedTokenAccountInstruction,
-    createTransferCheckedInstruction,
+    createTransferInstruction,
     getAssociatedTokenAddressSync,
 } from "@solana/spl-token";
 import { PublicKey, type TransactionInstruction } from "@solana/web3.js";
@@ -70,7 +70,8 @@ export class SplTokenService {
     }
 
     @Tool({
-        description: "Transfer an SPL token by its mint address",
+        description: "Transfer an SPL token by its mint address. The amount is not in base units.",
+        name: "transfer_token_by_mint_address",
     })
     async transferTokenByMintAddress(
         walletClient: SolanaWalletClient,
@@ -78,7 +79,7 @@ export class SplTokenService {
     ) {
         const { to, mintAddress, amount } = parameters;
 
-        const token = getTokenByMintAddress(mintAddress, this.network);
+        const token = await getTokenByMintAddress(mintAddress, walletClient.getConnection());
         if (!token) {
             throw new Error(`Token with mint address ${mintAddress} not found`);
         }
@@ -90,8 +91,10 @@ export class SplTokenService {
         const fromTokenAccount = getAssociatedTokenAddressSync(tokenMintPublicKey, fromPublicKey);
         const toTokenAccount = getAssociatedTokenAddressSync(tokenMintPublicKey, toPublicKey);
 
-        const fromAccountExists = await doesAccountExist(walletClient.getConnection(), fromTokenAccount);
-        const toAccountExists = await doesAccountExist(walletClient.getConnection(), toTokenAccount);
+        const [fromAccountExists, toAccountExists] = await Promise.all([
+            doesAccountExist(walletClient.getConnection(), fromTokenAccount),
+            doesAccountExist(walletClient.getConnection(), toTokenAccount),
+        ]);
 
         if (!fromAccountExists) {
             throw new Error(`From account ${fromTokenAccount.toBase58()} does not exist`);
@@ -105,13 +108,11 @@ export class SplTokenService {
             );
         }
         instructions.push(
-            createTransferCheckedInstruction(
+            createTransferInstruction(
                 fromTokenAccount,
-                tokenMintPublicKey,
                 toTokenAccount,
                 fromPublicKey,
                 BigInt(amount) * BigInt(10) ** BigInt(token.decimals),
-                token.decimals,
             ),
         );
 
