@@ -1,16 +1,15 @@
 import { WalletClientBase } from "@nycrypto/goat-core";
 import { AddressLookupTableAccount, type Connection, PublicKey } from "@solana/web3.js";
-import { formatUnits } from "viem";
 import type { SolanaTransaction } from "./types";
 
 export type SolanWalletClientCtorParams = {
     connection: Connection;
-    yunaAPIKey?: string;
+    yunaAPIKey: string;
 };
 
 export abstract class SolanaWalletClient extends WalletClientBase {
     protected connection: Connection;
-    protected yunaAPIKey?: string;
+    yunaAPIKey: string;
 
     constructor(params: SolanWalletClientCtorParams) {
         super();
@@ -29,26 +28,13 @@ export abstract class SolanaWalletClient extends WalletClientBase {
     }
 
     async balanceOf(address: string) {
-        if (this.yunaAPIKey) {
-            const res = await fetch(`https://api.yunaapi.com/v1/balance?address=${address}&blockchain=solana`, {
-                headers: {
-                    Authorization: `bearer ${this.yunaAPIKey}`,
-                },
-            });
+        const res = await fetch(`https://api.yunaapi.com/v1/balance?address=${address}&blockchain=solana`, {
+            headers: {
+                Authorization: `bearer ${this.yunaAPIKey}`,
+            },
+        });
 
-            return await res.json();
-        }
-
-        const pubkey = new PublicKey(address);
-        const balance = await this.connection.getBalance(pubkey);
-
-        return {
-            decimals: 9,
-            symbol: "SOL",
-            name: "Solana",
-            value: formatUnits(BigInt(balance), 9),
-            inBaseUnits: balance.toString(),
-        };
+        return await res.json();
     }
 
     abstract sendTransaction(transaction: SolanaTransaction): Promise<{ hash: string }>;

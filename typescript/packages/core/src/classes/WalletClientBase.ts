@@ -6,13 +6,15 @@ export type Signature = {
     signature: string;
 };
 
-export type Balance = {
-    decimals: number;
-    symbol: string;
-    name: string;
-    value: string;
-    inBaseUnits: string;
-};
+export type Balance =
+    | {
+          decimals: number;
+          symbol: string;
+          name: string;
+          value: string;
+          inBaseUnits: string;
+      }
+    | Record<string, unknown>;
 
 export abstract class WalletClientBase {
     abstract getAddress(): string;
