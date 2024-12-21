@@ -1,6 +1,6 @@
 {
-    "name": "@nycrypto/goat-plugin-kim",
-    "version": "0.1.1",
+    "name": "@nycrypto/goat-plugin-yuna",
+    "version": "0.2.1",
     "files": ["dist/**/*", "README.md", "package.json"],
     "scripts": {
         "build": "tsup",
@@ -13,13 +13,10 @@
     "types": "./dist/index.d.ts",
     "dependencies": {
         "@nycrypto/goat-core": "workspace:*",
-        "@nycrypto/goat-wallet-evm": "workspace:*",
-        "viem": "catalog:",
         "zod": "catalog:"
     },
     "peerDependencies": {
-        "@nycrypto/goat-core": "workspace:*",
-        "viem": "catalog:"
+        "@nycrypto/goat-core": "workspace:*"
     },
     "homepage": "https://ohmygoat.dev",
     "repository": {

@@ -29,7 +29,7 @@
     "homepage": "https://ohmygoat.dev",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/goat-sdk/goat.git"
+        "url": "git+https://github.com/tidus-wallet/goat.git"
     },
     "license": "MIT",
     "bugs": {
