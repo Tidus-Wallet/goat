@@ -33,14 +33,12 @@ export abstract class SolanaWalletClient extends WalletClientBase {
                 Authorization: `bearer ${this.yunaAPIKey}`,
             },
         });
-        console.log("I dey called");
 
         if (res.status !== 200) {
             throw new Error("Failed to get balance.");
         }
 
         const data = (await res.json()) as { tokens: Record<string, unknown>[] };
-        console.log(data);
 
         return data.tokens
             .filter((v) => v !== null)
