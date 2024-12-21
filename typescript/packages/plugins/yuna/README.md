@@ -1,27 +1,22 @@
 # Goat Uniswap Plugin 🐐 - TypeScript
 
-Uniswap plugin for [Goat 🐐](https://ohmygoat.dev). Allows you to create tools for interacting with Uniswap.
+Yuna API plugin for [Goat 🐐](https://ohmygoat.dev). Allows you to create tools for interacting with Uniswap.
 
 ## Installation
 ```
-npm install @goat-sdk/plugin-uniswap
+npm install @goat-sdk/plugin-yuna
 ```
 
 ## Usage
 
 ```typescript
-import { uniswap } from "@nycrypto/goat-plugin-uniswap";
+import { uniswap } from "@nycrypto/goat-plugin-yuna";
 
 
-const plugin = uniswap({
-    baseUrl: process.env.UNISWAP_BASE_URL as string,
-    apiKey: process.env.UNISWAP_API_KEY as string,
+const plugin = yuna({
+    apiKey: process.env.YUNA_API_KEY as string,
 });
 ```
-
-## Working example
-
-See the [Vercel AI example](https://github.com/goat-sdk/goat/tree/main/typescript/examples/vercel-ai/uniswap) for a working example of how to use the Uniswap plugin.
 
 ## Goat
 
