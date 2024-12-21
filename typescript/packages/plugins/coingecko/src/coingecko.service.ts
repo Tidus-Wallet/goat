@@ -9,7 +9,7 @@ export class CoinGeckoService {
     })
     async getTrendingCoins(parameters: GetTrendingCoinsParameters) {
         const response = await fetch(
-            `https://api.coingecko.com/api/v3/search/trending?x_cg_demo_api_key=${this.apiKey}`,
+            `https://pro-api.coingecko.com/api/v3/search/trending?x_cg_pro_api_key=${this.apiKey}`,
         );
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -32,7 +32,7 @@ export class CoinGeckoService {
             include_last_updated_at: includeLastUpdatedAt.toString(),
         });
         const response = await fetch(
-            `https://api.coingecko.com/api/v3/simple/price?${params.toString()}&x_cg_demo_api_key=${this.apiKey}`,
+            `https://pro-api.coingecko.com/api/v3/simple/price?${params.toString()}&x_cg_pro_api_key=${this.apiKey}`,
         );
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
