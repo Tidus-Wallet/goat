@@ -2,7 +2,7 @@ import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
 
 import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
-import { sendSOL, solana } from "@nycrypto/goat-wallet-solana";
+import { sendSOL, solana } from "@nycrypto/goat-wallet-solana-yuna";
 
 import { Connection, Keypair } from "@solana/web3.js";
 
@@ -20,15 +20,17 @@ const keypair = Keypair.fromSecretKey(base58.decode(process.env.SOLANA_PRIVATE_K
         wallet: solana({
             keypair,
             connection,
+            yunaAPIKey:
+                "CrD_ygebvqZ3QbFLjynI9zRqoqpEOfMhT4XkAcLJArDuA2nv5CLOyoHhK-R9dTnWZEKc6kOF1Z46EBAlUp633rJM3KGKlQaGIqbB",
         }),
         plugins: [sendSOL(), jupiter(), splToken()],
     });
 
     const result = await generateText({
-        model: openai("gpt-4o-mini"),
+        model: openai("gpt-4o"),
         tools: tools,
         maxSteps: 10,
-        prompt: "What's my wallet address",
+        prompt: "What's my wallet balance? Don't forget to show the mint addresses too",
     });
 
     console.log(result.text);

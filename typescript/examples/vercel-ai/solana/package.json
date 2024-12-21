@@ -14,7 +14,7 @@
         "@nycrypto/goat-core": "workspace:*",
         "@nycrypto/goat-plugin-spl-token": "workspace:*",
         "@nycrypto/goat-plugin-jupiter": "workspace:*",
-        "@nycrypto/goat-wallet-solana": "workspace:*",
+        "@nycrypto/goat-wallet-solana-yuna": "workspace:*",
         "@solana/web3.js": "catalog:",
         "ai": "catalog:",
         "bip39": "^3.1.0",

@@ -14,7 +14,16 @@ export type Balance =
           value: string;
           inBaseUnits: string;
       }
-    | Record<string, unknown>;
+    | Record<string, unknown>
+    | {
+          decimals: unknown;
+          symbol: unknown;
+          name: unknown;
+          value: unknown;
+          mintAddress: unknown;
+          icon: unknown;
+          usd: unknown;
+      }[];
 
 export abstract class WalletClientBase {
     abstract getAddress(): string;
