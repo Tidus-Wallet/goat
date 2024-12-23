@@ -3,11 +3,11 @@ import { SplTokenService } from "./spl-token.service";
 import type { SplTokenPluginCtorParams } from "./types/SplTokenPluginCtorParams";
 
 export class SplTokenPlugin extends PluginBase {
-    constructor(params?: SplTokenPluginCtorParams) {
-        super("splToken", [new SplTokenService(params)]);
+    constructor() {
+        super("splToken", [new SplTokenService()]);
     }
 
     supportsChain = (chain: Chain) => chain.type === "solana";
 }
 
-export const splToken = (params?: SplTokenPluginCtorParams) => new SplTokenPlugin(params);
+export const splToken = (params?: SplTokenPluginCtorParams) => new SplTokenPlugin();

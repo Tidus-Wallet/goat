@@ -12,32 +12,27 @@ import {
     GetTokenMintAddressBySymbolParameters,
     TransferTokenByMintAddressParameters,
 } from "./parameters";
-import { SPL_TOKENS, type SolanaNetwork, type Token } from "./tokens";
-import type { SplTokenPluginCtorParams } from "./types/SplTokenPluginCtorParams";
+import { type Token } from "./tokens";
 import { doesAccountExist } from "./utils/doesAccountExist";
 import { getTokenByMintAddress } from "./utils/getTokenByMintAddress";
 
 export class SplTokenService {
-    private network: SolanaNetwork;
-    private tokens: Token[];
-
-    constructor({ network = "mainnet", tokens = SPL_TOKENS }: SplTokenPluginCtorParams = {}) {
-        this.network = network;
-        this.tokens = tokens;
-    }
+    private tokens: Token[] | undefined;
 
     @Tool({
-        description: "Get the SPL token info by its symbol, including the mint address, decimals, and name",
+        description:
+            "Get the SPL token info by its symbol, returning the mint address, decimals, dailyVolume, and name",
     })
     async getTokenInfoBySymbol(parameters: GetTokenMintAddressBySymbolParameters) {
-        const token = this.tokens.find((token) =>
-            [token.symbol, token.symbol.toLowerCase()].includes(parameters.symbol),
-        );
+        const tokens = await fetch("https://tokens.jup.ag/tokens?tags=verified");
+        this.tokens = await tokens.json();
+        const token = this.tokens?.find((token) => token.symbol.toLowerCase() === parameters.symbol.toLowerCase());
         return {
             symbol: token?.symbol,
-            mintAddress: token?.mintAddresses[this.network],
+            mintAddress: token?.address,
             decimals: token?.decimals,
             name: token?.name,
+            dailyVolume: token?.daily_volume,
         };
     }
 
