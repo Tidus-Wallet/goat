@@ -1,5 +1,13 @@
 # @goat-sdk/core
 
+## 0.4.3
+
+### Patch Changes
+
+- 3c454a0: fix: further debugging solana yuna wallet
+- 7d258ab: Initial fork of the goat sdk by the Tidus Wallet team
+- 558aba2: improve solana wallet experience
+
 ## 0.4.0
 
 ### Minor Changes

@@ -1,5 +1,19 @@
 # goat-examples-langchain-viem
 
+## 0.2.4
+
+### Patch Changes
+
+- Updated dependencies [3c454a0]
+- Updated dependencies [7d258ab]
+- Updated dependencies [8663cc7]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+  - @nycrypto/goat-adapter-langchain@0.2.3
+  - @nycrypto/goat-plugin-erc20@0.2.3
+  - @nycrypto/goat-wallet-evm@0.2.1
+  - @nycrypto/goat-wallet-viem@0.2.1
+
 ## 0.2.3
 
 ### Patch Changes

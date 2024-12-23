@@ -1,5 +1,19 @@
 # @goat-sdk/wallet-solana
 
+## 0.2.9
+
+### Patch Changes
+
+- 3c454a0: fix: further debugging solana yuna wallet
+- e723ad0: fix: getting token by symbol now doesn't need to be supplied with a token list
+- ec4208e: add yuna solana wallet
+- 433f82e: Parse yuna api key to wallet client
+- 558aba2: improve solana wallet experience
+- Updated dependencies [3c454a0]
+- Updated dependencies [7d258ab]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+
 ## 0.2.4
 
 ### Patch Changes

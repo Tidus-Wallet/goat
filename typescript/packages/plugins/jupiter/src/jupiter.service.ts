@@ -1,6 +1,6 @@
+import { createJupiterApiClient } from "@jup-ag/api";
 import { Tool } from "@nycrypto/goat-core";
 import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
-import { createJupiterApiClient } from "@jup-ag/api";
 import { ComputeBudgetProgram, PublicKey, Transaction, TransactionInstruction } from "@solana/web3.js";
 
 import { GetQuoteParameters } from "./parameters";

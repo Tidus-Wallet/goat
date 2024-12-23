@@ -11,6 +11,7 @@ import { getOnChainTools } from "@nycrypto/goat-adapter-langchain";
 import { PEPE, USDC, erc20 } from "@nycrypto/goat-plugin-erc20";
 import { sendETH } from "@nycrypto/goat-wallet-evm";
 
+import { LIT_NETWORK as _LIT_NETWORK } from "@lit-protocol/constants";
 import {
     createEthersWallet,
     createLitContractsClient,
@@ -22,7 +23,6 @@ import {
     mintCapacityCredit,
     mintPKP,
 } from "@nycrypto/goat-wallet-lit";
-import { LIT_NETWORK as _LIT_NETWORK } from "@lit-protocol/constants";
 
 import { ethers } from "ethers";
 

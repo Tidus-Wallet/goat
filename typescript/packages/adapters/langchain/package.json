@@ -1,6 +1,6 @@
 {
     "name": "@nycrypto/goat-adapter-langchain",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "sideEffects": false,
     "files": ["dist/**/*", "README.md", "package.json"],
     "scripts": {

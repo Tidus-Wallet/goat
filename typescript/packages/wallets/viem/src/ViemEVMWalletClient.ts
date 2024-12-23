@@ -1,4 +1,9 @@
-import { type EVMReadRequest, type EVMTransaction, type EVMTypedData, EVMWalletClient } from "@nycrypto/goat-wallet-evm";
+import {
+    type EVMReadRequest,
+    type EVMTransaction,
+    type EVMTypedData,
+    EVMWalletClient,
+} from "@nycrypto/goat-wallet-evm";
 import { type WalletClient as ViemWalletClient, encodeFunctionData, formatUnits, publicActions } from "viem";
 import { mainnet } from "viem/chains";
 import { normalize } from "viem/ens";

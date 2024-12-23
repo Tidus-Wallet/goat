@@ -1,5 +1,13 @@
 # @goat-sdk/wallet-viem
 
+## 0.2.1
+
+### Patch Changes
+
+- 7d258ab: Initial fork of the goat sdk by the Tidus Wallet team
+- Updated dependencies [7d258ab]
+  - @nycrypto/goat-wallet-evm@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes

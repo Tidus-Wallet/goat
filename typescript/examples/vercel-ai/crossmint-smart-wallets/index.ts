@@ -2,8 +2,8 @@ import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
 
 import { getOnChainTools } from "@nycrypto/goat-adapter-vercel-ai";
-import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 import { USDC, erc20 } from "@nycrypto/goat-plugin-erc20";
+import { crossmint } from "@nycrypto/goat-wallet-crossmint";
 import { sendETH } from "@nycrypto/goat-wallet-evm";
 
 require("dotenv").config();
