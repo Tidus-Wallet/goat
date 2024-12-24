@@ -18,6 +18,11 @@ import { getTokenByMintAddress } from "./utils/getTokenByMintAddress";
 
 export class SplTokenService {
     private tokens: Token[] | undefined;
+    private walletClient: SolanaWalletClient;
+
+    constructor(walletClient: SolanaWalletClient) {
+        this.walletClient = walletClient;
+    }
 
     @Tool({
         description:
@@ -39,10 +44,7 @@ export class SplTokenService {
     @Tool({
         description: "Get the balance of an SPL token by its mint address",
     })
-    async getTokenBalanceByMintAddress(
-        walletClient: SolanaWalletClient,
-        parameters: GetTokenBalanceByMintAddressParameters,
-    ) {
+    async getTokenBalanceByMintAddress(parameters: GetTokenBalanceByMintAddressParameters) {
         const { walletAddress, mintAddress } = parameters;
         try {
             const tokenAccount = getAssociatedTokenAddressSync(
@@ -50,13 +52,13 @@ export class SplTokenService {
                 new PublicKey(walletAddress),
             );
 
-            const accountExists = await doesAccountExist(walletClient.getConnection(), tokenAccount);
+            const accountExists = await doesAccountExist(this.walletClient.getConnection(), tokenAccount);
 
             if (!accountExists) {
                 return 0;
             }
 
-            const balance = await walletClient.getConnection().getTokenAccountBalance(tokenAccount);
+            const balance = await this.walletClient.getConnection().getTokenAccountBalance(tokenAccount);
 
             return balance;
         } catch (error) {
@@ -68,27 +70,24 @@ export class SplTokenService {
         description: "Transfer an SPL token by its mint address. The amount is not in base units.",
         name: "transfer_token_by_mint_address",
     })
-    async transferTokenByMintAddress(
-        walletClient: SolanaWalletClient,
-        parameters: TransferTokenByMintAddressParameters,
-    ) {
+    async transferTokenByMintAddress(parameters: TransferTokenByMintAddressParameters) {
         const { to, mintAddress, amount } = parameters;
 
-        const token = await getTokenByMintAddress(mintAddress, walletClient.getConnection());
+        const token = await getTokenByMintAddress(mintAddress, this.walletClient.getConnection());
         if (!token) {
             throw new Error(`Token with mint address ${mintAddress} not found`);
         }
 
         const tokenMintPublicKey = new PublicKey(mintAddress);
-        const fromPublicKey = new PublicKey(walletClient.getAddress());
+        const fromPublicKey = new PublicKey(this.walletClient.getAddress());
         const toPublicKey = new PublicKey(to);
 
         const fromTokenAccount = getAssociatedTokenAddressSync(tokenMintPublicKey, fromPublicKey);
         const toTokenAccount = getAssociatedTokenAddressSync(tokenMintPublicKey, toPublicKey);
 
         const [fromAccountExists, toAccountExists] = await Promise.all([
-            doesAccountExist(walletClient.getConnection(), fromTokenAccount),
-            doesAccountExist(walletClient.getConnection(), toTokenAccount),
+            doesAccountExist(this.walletClient.getConnection(), fromTokenAccount),
+            doesAccountExist(this.walletClient.getConnection(), toTokenAccount),
         ]);
 
         if (!fromAccountExists) {
@@ -111,7 +110,7 @@ export class SplTokenService {
             ),
         );
 
-        return await walletClient.sendTransaction({ instructions });
+        return await this.walletClient.sendTransaction({ instructions });
     }
 
     @Tool({

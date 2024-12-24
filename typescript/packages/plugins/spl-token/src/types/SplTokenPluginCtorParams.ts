@@ -1,6 +1,5 @@
-import { SolanaNetwork, Token } from "../tokens";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 
 export interface SplTokenPluginCtorParams {
-    network?: SolanaNetwork;
-    tokens?: Token[];
+    walletClient: SolanaWalletClient;
 }

@@ -30,7 +30,7 @@ const keypair = Keypair.fromSecretKey(base58.decode(process.env.SOLANA_PRIVATE_K
         model: openai("gpt-4o"),
         tools: tools,
         maxSteps: 10,
-        prompt: "send 100 of the token with mint address 7XxBrmmxg4f8gUuBRV6DZ7uRaXYcSMqEyGRgRe4ZwZwg to HDHuqxc1PJJPvHKSLXhVxbKXmPK9SkwSH2wBfdVj2X2v",
+        prompt: "swap all my usdc for sol",
     });
 
     console.log(result.text);

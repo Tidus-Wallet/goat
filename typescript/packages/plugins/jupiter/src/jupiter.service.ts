@@ -1,15 +1,16 @@
 import { Tool } from "@nycrypto/goat-core";
-import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
+import { SolanaKeypairWalletClient } from "@nycrypto/goat-wallet-solana";
 import { createJupiterApiClient } from "@jup-ag/api";
-import { ComputeBudgetProgram, PublicKey, Transaction, TransactionInstruction } from "@solana/web3.js";
 
 import { GetQuoteParameters } from "./parameters";
 
 export class JupiterService {
     private readonly jupiterApiClient: ReturnType<typeof createJupiterApiClient>;
+    private walletClient: SolanaKeypairWalletClient;
 
-    constructor() {
+    constructor(walletClient: SolanaKeypairWalletClient) {
         this.jupiterApiClient = createJupiterApiClient();
+        this.walletClient = walletClient;
     }
 
     @Tool({
@@ -33,12 +34,12 @@ export class JupiterService {
     @Tool({
         description: "Swap an SPL token for another token on the Jupiter DEX",
     })
-    async swapTokens(walletClient: SolanaWalletClient, parameters: GetQuoteParameters) {
+    async swapTokens(parameters: GetQuoteParameters) {
         const quoteResponse = await this.getQuote(parameters);
 
         const { swapTransaction } = await this.jupiterApiClient.swapPost({
             swapRequest: {
-                userPublicKey: walletClient.getAddress(),
+                userPublicKey: this.walletClient.getAddress(),
                 quoteResponse: quoteResponse,
                 dynamicComputeUnitLimit: true,
                 prioritizationFeeLamports: "auto",
@@ -47,11 +48,11 @@ export class JupiterService {
 
         const versionedTransaction = VersionedTransaction.deserialize(Buffer.from(swapTransaction, "base64"));
         const instructions = await decompileVersionedTransactionToInstructions(
-            walletClient.getConnection(),
+            this.walletClient.getConnection(),
             versionedTransaction,
         );
 
-        const { hash } = await walletClient.sendTransaction({
+        const { hash } = await this.walletClient.sendTransaction({
             instructions,
             addressLookupTableAddresses: versionedTransaction.message.addressTableLookups.map((lookup) =>
                 lookup.accountKey.toBase58(),
