@@ -1,5 +1,17 @@
 # goat-examples-vercel-ai-chromia
 
+## 0.2.2
+
+### Patch Changes
+
+- Updated dependencies [3c454a0]
+- Updated dependencies [7d258ab]
+- Updated dependencies [8663cc7]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+  - @nycrypto/goat-adapter-vercel-ai@0.2.2
+  - @nycrypto/goat-wallet-chromia@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes

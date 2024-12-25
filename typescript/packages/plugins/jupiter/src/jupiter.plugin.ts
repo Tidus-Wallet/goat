@@ -1,6 +1,6 @@
 import { type Chain, PluginBase } from "@nycrypto/goat-core";
-import { JupiterService } from "./jupiter.service";
 import { SolanaKeypairWalletClient } from "@nycrypto/goat-wallet-solana";
+import { JupiterService } from "./jupiter.service";
 
 export class JupiterPlugin extends PluginBase {
     constructor(walletClient: SolanaKeypairWalletClient) {

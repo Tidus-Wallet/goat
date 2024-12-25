@@ -1,11 +1,11 @@
-import { Tool } from "@nycrypto/goat-core";
-import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { transfer } from "@metaplex-foundation/mpl-bubblegum";
 import { getAssetWithProof } from "@metaplex-foundation/mpl-bubblegum";
 import { mplBubblegum } from "@metaplex-foundation/mpl-bubblegum";
 import { publicKey } from "@metaplex-foundation/umi";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import { toWeb3JsInstruction } from "@metaplex-foundation/umi-web3js-adapters";
+import { Tool } from "@nycrypto/goat-core";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { TransferNftParameters } from "./parameters";
 
 export class SolanaNftsService {

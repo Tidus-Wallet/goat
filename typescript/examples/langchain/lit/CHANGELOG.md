@@ -1,5 +1,20 @@
 # goat-examples-langchain-lit
 
+## 0.1.8
+
+### Patch Changes
+
+- Updated dependencies [3c454a0]
+- Updated dependencies [7d258ab]
+- Updated dependencies [8663cc7]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+  - @nycrypto/goat-adapter-langchain@0.2.3
+  - @nycrypto/goat-plugin-erc20@0.2.3
+  - @nycrypto/goat-wallet-evm@0.2.1
+  - @nycrypto/goat-wallet-lit@0.2.6
+  - @nycrypto/goat-wallet-solana@0.2.5
+
 ## 0.1.7
 
 ### Patch Changes

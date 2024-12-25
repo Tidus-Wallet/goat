@@ -1,7 +1,7 @@
 import { type Chain, PluginBase } from "@nycrypto/goat-core";
+import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 import { SplTokenService } from "./spl-token.service";
 import type { SplTokenPluginCtorParams } from "./types/SplTokenPluginCtorParams";
-import { SolanaWalletClient } from "@nycrypto/goat-wallet-solana";
 
 export class SplTokenPlugin extends PluginBase {
     constructor(walletClient: SolanaWalletClient) {

@@ -1,4 +1,3 @@
-import { createToolParameters } from "@nycrypto/goat-core";
 import {
     type QuoteGetRequest,
     QuoteGetSwapModeEnum,
@@ -6,6 +5,7 @@ import {
     type SwapInfo,
     type SwapPostRequest,
 } from "@jup-ag/api";
+import { createToolParameters } from "@nycrypto/goat-core";
 import { z } from "zod";
 
 export class GetQuoteParameters extends createToolParameters(

@@ -1,5 +1,23 @@
 # goat-examples-vercel-ai-solana
 
+## 0.2.6
+
+### Patch Changes
+
+- Updated dependencies [3c454a0]
+- Updated dependencies [e723ad0]
+- Updated dependencies [ec4208e]
+- Updated dependencies [7d258ab]
+- Updated dependencies [433f82e]
+- Updated dependencies [8663cc7]
+- Updated dependencies [dca81e4]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+  - @nycrypto/goat-wallet-solana-yuna@0.2.9
+  - @nycrypto/goat-plugin-spl-token@0.2.9
+  - @nycrypto/goat-adapter-vercel-ai@0.2.2
+  - @nycrypto/goat-plugin-jupiter@0.2.6
+
 ## 0.2.5
 
 ### Patch Changes

@@ -1,4 +1,4 @@
-import { createTool, Tool } from "@nycrypto/goat-core";
+import { Tool, createTool } from "@nycrypto/goat-core";
 import { GetBalanceSchema, GetTransactionHistorySchema } from "./parameters";
 
 export class YunaService {

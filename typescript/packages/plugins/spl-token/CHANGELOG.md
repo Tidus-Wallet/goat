@@ -1,5 +1,19 @@
 # @goat-sdk/plugin-spl-token
 
+## 0.2.9
+
+### Patch Changes
+
+- e723ad0: fix: getting token by symbol now doesn't need to be supplied with a token list
+- 7d258ab: Initial fork of the goat sdk by the Tidus Wallet team
+- dca81e4: fix: walletClient undefined
+- 558aba2: improve solana wallet experience
+- Updated dependencies [3c454a0]
+- Updated dependencies [7d258ab]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+  - @nycrypto/goat-wallet-solana@0.2.5
+
 ## 0.2.5
 
 ### Patch Changes

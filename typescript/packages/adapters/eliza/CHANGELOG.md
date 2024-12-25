@@ -1,5 +1,16 @@
 # @goat-sdk/adapter-eliza
 
+## 0.2.2
+
+### Patch Changes
+
+- 7d258ab: Initial fork of the goat sdk by the Tidus Wallet team
+- 8663cc7: version bump for type defs
+- Updated dependencies [3c454a0]
+- Updated dependencies [7d258ab]
+- Updated dependencies [558aba2]
+  - @nycrypto/goat-core@0.4.3
+
 ## 0.2.0
 
 ### Minor Changes
